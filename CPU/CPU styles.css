@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #020E28, #61EAC0)
+}
+
+h3, p, h1, h2{
+    color: white; 
+ }
+
+main {
+    display: flex;
+}
+
+header {
+     background-color: #020E28;
+     color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+     float: auto;
+}
+
+header a img{
+    transition: transform 0.3s;
+}
+
+header a img:hover{
+    transform: scale(1.2);
+}
+ 
+a {
+     text-decoration: none;
+}
+ 
+header .logo img {
+     max-width: 150px;
+}
+ 
+nav{
+     position: sticky;
+     display: block;
+     top: 0;
+}
+ 
+nav ul {
+    float: left;
+     list-style: none;
+     display: flex;
+     margin: 30px;
+     padding: 0;
+}
+ 
+nav ul li {
+     margin: 0 10px;
+     transition: transform 0.3s;
+}
+ 
+nav ul li:hover {
+     transform: scale(1.2);
+}
+ 
+nav ul li a {
+     color: white;
+     text-decoration: none;
+}
+
+.items{
+    flex: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.items img{
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.specs{
+    flex: 70%;
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+}
+.other-products{
+    display: flex;
+    padding: 10px;
+
+}
+
+.other-products img{
+    width: 80%;
+    height: 200px;
+    transition: transform 0.3s;
+}
+
+.other-products img:hover{
+    transform: scale(1.2);
+    
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: white;
+}
+th, td {
+    width: 10%;
+    height: 70px;
+    border: 1px solid black;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
